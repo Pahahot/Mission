@@ -57,7 +57,7 @@
 # for i in range(1,10):
 #     print(input_number * i, end = ' ')
 
-#8-8
+#8-8  -> 분석이 필요
 local = "C:/Users/incom/OneDrive/바탕 화면/파이썬COP2/Mission/곽호준/abc.txt"
 local2 = "C:/Users/incom/OneDrive/바탕 화면/파이썬COP2/Mission/곽호준/num.txt"
 
@@ -84,43 +84,25 @@ local2 = "C:/Users/incom/OneDrive/바탕 화면/파이썬COP2/Mission/곽호준/
 # print (total/len(content))
 
 #8-10
-# class Calculator(Calculate):
-    # def __init__(self, total):
-        # self.total = 0
+# class Calculator:
+#     def print_num(self, total):
+#         print(total)
 
-    # def print_num(self, total):
-        # print(self.total)
-
-    # pass
-
-# class Calculate:
-#     def init(self, numlist):
-#         self.numlist = numlist
+# class Calculate(Calculator):
+#     def __init__(self, numList):
+#         self.numList = numList
 
 #     def add(self):
 #         total = 0
-#         for i in self.numlist:
+#         for i in self.numList:
 #             total += i
+#         self.print_num(total)
 #         return total
-#         # self.print_num(self.total):
+        
+#     def avg(self):
+#         total = self.add()
+#         self.print_num(total/len(self.numList))
 
-# cal1 = Calculate()
-# print(cal1.add([1,2,3,4,5]))
-
-class Calculator:
-    def init (self, numberList): 
-        self.numberList = numberList
-
-    def add(self): 
-        result = 0
-        for num in self.numberList: 
-            result += num
-        return result
-
-    def avg(self):
-        total = self.add()
-        return total / len(self.numberList)
-
-cal1 = Calculator([1,2,3,4,5]) 
-print (cal1.add())
-print (cal1.avg())
+# cal1 = Calculate([1,2,3,4,5])
+# cal1.add()
+# cal1.avg()
