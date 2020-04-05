@@ -61,16 +61,18 @@
 local = "C:/Users/incom/OneDrive/바탕 화면/파이썬COP2/Mission/곽호준/abc.txt"
 local2 = "C:/Users/incom/OneDrive/바탕 화면/파이썬COP2/Mission/곽호준/num.txt"
 
+with open(local, 'r') as f:
+    content = f.readlines()
 
-# with open(local, 'r') as f:
-#     content = f.readlines()
+print(content)
+content.reverse()
+# print(content.reverse())
 
-# print(content)
-# content2 = content.reverse()
-# print(content2)
-
-# with open(local,'a') as f:
-#     f.write(content2)
+with open(local,'w') as f:
+    for i in content:
+        i = i.strip()
+        f.write(i)
+        f.write('\n')
 
 #8-9
 # total = 0
